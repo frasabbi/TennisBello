@@ -1,0 +1,44 @@
+﻿@model ReservationsViewModel
+
+<p>
+    <a asp-action="ReservationForm">Create New</a><br />
+    @using (Html.BeginForm(FormMethod.Post))
+    {
+        @Html.DropDownListFor(model => model.PageInfo.FilterField, Model.NameSelectList);
+
+        <input type="date" asp-for="PageInfo.FilterDate" value="" />
+
+        <input type="submit" value="Filtra" />
+    }
+
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservations.First().Court.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservations.First().ReservationTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservations.First().MatchType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservations.First().Court.Type)
+            </th>
+            <th>
+                Prezzo
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Reservations)
+        {
+            @Html.Partial("ReservationSummary", item)
+        }
+        <a asp-action="SessionListView" asp-controller="Home">Vai alla lista delle prenotazioni della sessione</a>
+
+    </tbody>
+</table>

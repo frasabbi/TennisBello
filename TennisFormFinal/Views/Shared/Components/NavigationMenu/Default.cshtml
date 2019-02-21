@@ -1,0 +1,17 @@
+﻿@model IEnumerable<string>
+<a class="btn btn-block btn-secondary"
+   asp-action="DisplayList"
+   asp-controller="Home"
+   asp-route-courtType="">
+    Home
+</a>
+@foreach (string courtType in Model)
+{
+    <a class="btn btn-block
+       @(courtType == ViewBag.SelectedCategory ? "btn-primary": "btn-secondary")"
+       asp-action="DisplayList"
+       asp-controller="Home"
+       asp-route-courtType="@courtType">
+        @courtType
+    </a>
+}

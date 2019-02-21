@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tennis Form Final</title>
+    <link rel="stylesheet"
+          asp-href-include="/lib/bootstrap/dist/**/*.min.css"
+          asp-href-exclude="**/*-reboot*,**/*-grid*" />
+</head>
+<body>
+    <div class="navbar navbar-inverse bg-inverse" role="navigation">
+        <a class="navbar-brand" href="#">LISTA PRENOTAZIONI</a>
+    </div>
+    <div class="row m-1 p-1">
+        <div id="categories" class="col-3">
+            @await Component.InvokeAsync("NavigationMenu")
+        </div>
+        <div id="mainDiv" class="col-9">
+            <h1>Prenota il tuo campo da tennis!</h1>
+            @RenderBody()
+        </div>
+        <div id="footer" class="card-footer">
+            <div class="container">
+                <p class="panel-heading">Copyright by Nicoletta <!--<a href="https://www.facebook.com/nmagi">Cliccami tutta</a>--></p>
+            </div>
+        </div>
+
+        <ul class="nav pull-right scroll-top">
+            <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+        </ul>
+</body>
+</html>

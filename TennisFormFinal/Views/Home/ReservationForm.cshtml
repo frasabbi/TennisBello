@@ -1,0 +1,36 @@
+﻿@model TennisFormFinal.Models.TennisReservationViewModel
+
+
+
+<h4>TennisReservation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ReservationForm" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Reservation.Court.Name" class="control-label">Nome del campo: </label>
+                <!--<input asp-for="FieldName" class="form-control" />-->
+                @Html.DropDownListFor(model => model.Reservation.Court.Name,
+               Model.NameSelectList)
+                <span asp-validation-for="Reservation.Court.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reservation.ReservationTime" class="control-label">Data e ora del match: </label>
+                @Html.EditorFor(model => model.Reservation.ReservationTime)
+                <span asp-validation-for="Reservation.ReservationTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reservation.MatchType" class="control-label">Tipo di match: </label>
+                @Html.DropDownListFor(model => model.Reservation.MatchType,
+               new SelectList(new string[] { "Singolo", "Doppio" },
+               "Singolo"))
+                <span asp-validation-for="Reservation.MatchType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
