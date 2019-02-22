@@ -16,11 +16,12 @@ namespace TennisFormFinal.Controllers
     {
         
         private ITSRepository repository;
-        private SessionReservation sReservation;
+        private SessionReservation sessionRes;
 
-        public HomeController(ITSRepository repo)
+        public HomeController(ITSRepository repo, SessionReservation sessionReservation)
         {
             repository = repo;
+            sessionRes = sessionReservation;
         }
         // GET: /<controller>/
         public ViewResult Index()
@@ -37,14 +38,14 @@ namespace TennisFormFinal.Controllers
             TennisReservationViewModel model = new TennisReservationViewModel(new TennisReservation() {ReservationTime=DateTime.Now }, courtNameList, courtTypeList);
             return View(model);
         }
-        public SessionReservation GetSessionReservation()
-        {    
-             return HttpContext.Session.GetJson<SessionReservation>("session_reservation");
-        }
-        public void SaveSessionReservation(SessionReservation sR)
-        {
-            HttpContext.Session.SetJson("session_reservation", sR);
-        }
+        //public SessionReservation GetSessionReservation()
+        //{    
+        //     return HttpContext.Session.GetJson<SessionReservation>("session_reservation");
+        //}
+        //public void SaveSessionReservation(SessionReservation sR)
+        //{
+        //    HttpContext.Session.SetJson("session_reservation", sR);
+        //}
         [HttpPost]
         public IActionResult ReservationForm(TennisReservationViewModel reservationVM)
         {
@@ -55,9 +56,9 @@ namespace TennisFormFinal.Controllers
 
                 repository.AddReservation(reservationVM.Reservation);
 
-                SessionReservation res = GetSessionReservation()?? new SessionReservation();
-                res.AddReservation(reservationVM.Reservation);
-                SaveSessionReservation(res);
+                
+                sessionRes.AddReservation(reservationVM.Reservation);
+ 
 
                 return RedirectToAction("DisplayList");
             }
@@ -76,19 +77,6 @@ namespace TennisFormFinal.Controllers
         {
             IQueryable<TennisReservation> filteredReservation;
 
-
-            try
-            {
-                foreach (var item in GetSessionReservation().Reservations)
-                {
-                    Console.WriteLine(item.MatchType);
-                }
-            }
-            catch (Exception)
-            {
-
-                
-            }
 
 
 
@@ -138,33 +126,20 @@ namespace TennisFormFinal.Controllers
             IQueryable<TennisReservation> filteredReservation;
 
 
-            try
-            {
-                foreach (var item in GetSessionReservation().Reservations)
-                {
-                    Console.WriteLine(item.MatchType);
-                }
-            }
-            catch (Exception)
-            {
-
-
-            }
-
             var courtNameList = new SelectList(repository.Courts.Select(c => c.Name), repository.Courts.First().Name);
             var courtTypeList = new SelectList(repository.Courts.Select(c => c.Type).Distinct(), repository.Courts.First().Type);
 
 
-            SessionReservation res = GetSessionReservation() ?? new SessionReservation();
+            
 
             if (String.IsNullOrEmpty(courtType))
             {
 
-                filteredReservation =res.Reservations.AsQueryable<TennisReservation>();
+                filteredReservation =sessionRes.Reservations.AsQueryable<TennisReservation>();
             }
             else
             {
-                filteredReservation = res.GetReservationByCourtType(courtType).AsQueryable<TennisReservation>();
+                filteredReservation = sessionRes.GetReservationByCourtType(courtType).AsQueryable<TennisReservation>();
             }
             ReservationsViewModel model = new ReservationsViewModel(filteredReservation, courtNameList, courtTypeList);
 

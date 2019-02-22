@@ -121,3 +121,35 @@ C:\Users\frasa\Downloads\TennisUltimate-master\TennisUltimate-master\TennisFormF
 C:\Users\frasa\Downloads\TennisUltimate-master\TennisUltimate-master\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.Views.pdb
 C:\Users\frasa\Downloads\TennisUltimate-master\TennisUltimate-master\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.csproj.CopyComplete
 C:\Users\frasa\Downloads\TennisUltimate-master\TennisUltimate-master\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\SessionListView.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\bin\Debug\netcoreapp2.1\TennisFormFinal.deps.json
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\bin\Debug\netcoreapp2.1\TennisFormFinal.runtimeconfig.json
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\bin\Debug\netcoreapp2.1\TennisFormFinal.runtimeconfig.dev.json
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\bin\Debug\netcoreapp2.1\TennisFormFinal.dll
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\bin\Debug\netcoreapp2.1\TennisFormFinal.pdb
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\bin\Debug\netcoreapp2.1\TennisFormFinal.Views.dll
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\bin\Debug\netcoreapp2.1\TennisFormFinal.Views.pdb
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.csprojAssemblyReference.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.csproj.CoreCompileInputs.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.RazorAssemblyInfo.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.RazorAssemblyInfo.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.AssemblyInfoInputs.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.AssemblyInfo.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.TagHelpers.input.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.TagHelpers.output.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.RazorCoreGenerate.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\BellaStoria.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\DisplayList.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\ReservationForm.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Home\SessionListView.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\NavigationMenu\Default.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ReservationSummary.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_MasterPage.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.RazorTargetAssemblyInfo.cache
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.RazorTargetAssemblyInfo.cs
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.Views.pdb
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.dll
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.pdb
+C:\Users\Allievo 6\Documents\GitHub\TennisBello\TennisFormFinal\obj\Debug\netcoreapp2.1\TennisFormFinal.csproj.CopyComplete
