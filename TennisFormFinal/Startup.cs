@@ -32,6 +32,8 @@ namespace TennisFormFinal
             services.AddDbContext<TRDBContext>(options =>
                 options.UseSqlServer(
                     Configuration["Data:TennisFormFinal:ConnectionString"]).UseLazyLoadingProxies());
+            services.AddScoped<SessionReservation>(sp => UberSessionReservation.GetSessionReservation(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<ITSRepository, Repository>();
             services.AddMvc();
             services.AddMemoryCache();

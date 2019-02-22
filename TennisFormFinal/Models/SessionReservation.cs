@@ -14,7 +14,7 @@ namespace TennisFormFinal.Models
             Reservations = new List<TennisReservation>();
         }
      
-        public void AddReservation(TennisReservation reservation)
+        public virtual void AddReservation(TennisReservation reservation)
         {
 
             Reservations.Add(reservation);
